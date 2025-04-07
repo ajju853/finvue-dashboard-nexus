@@ -99,40 +99,40 @@ export function TradingViewWidget({
               theme,
               locale,
               container_id: containerId,
-              "tabs": [
+              tabs: [
                 {
-                  "title": "Indices",
-                  "symbols": [
-                    { "s": "FOREXCOM:SPXUSD", "d": "S&P 500" },
-                    { "s": "FOREXCOM:NSXUSD", "d": "Nasdaq 100" },
-                    { "s": "FOREXCOM:DJI", "d": "Dow 30" },
-                    { "s": "INDEX:NKY", "d": "Nikkei 225" },
-                    { "s": "INDEX:DEU30", "d": "DAX Index" },
-                    { "s": "FOREXCOM:UKXGBP", "d": "FTSE 100" }
+                  title: "Indices",
+                  symbols: [
+                    { s: "FOREXCOM:SPXUSD", d: "S&P 500" },
+                    { s: "FOREXCOM:NSXUSD", d: "Nasdaq 100" },
+                    { s: "FOREXCOM:DJI", d: "Dow 30" },
+                    { s: "INDEX:NKY", d: "Nikkei 225" },
+                    { s: "INDEX:DEU30", d: "DAX Index" },
+                    { s: "FOREXCOM:UKXGBP", d: "FTSE 100" }
                   ],
-                  "originalTitle": "Indices"
+                  originalTitle: "Indices"
                 },
                 {
-                  "title": "Commodities",
-                  "symbols": [
-                    { "s": "COMEX:GC1!", "d": "Gold" },
-                    { "s": "NYMEX:CL1!", "d": "Crude Oil" },
-                    { "s": "NYMEX:NG1!", "d": "Natural Gas" },
-                    { "s": "CBOT:ZC1!", "d": "Corn" }
+                  title: "Commodities",
+                  symbols: [
+                    { s: "COMEX:GC1!", d: "Gold" },
+                    { s: "NYMEX:CL1!", d: "Crude Oil" },
+                    { s: "NYMEX:NG1!", d: "Natural Gas" },
+                    { s: "CBOT:ZC1!", d: "Corn" }
                   ],
-                  "originalTitle": "Commodities"
+                  originalTitle: "Commodities"
                 },
                 {
-                  "title": "Forex",
-                  "symbols": [
-                    { "s": "FX:EURUSD", "d": "EUR/USD" },
-                    { "s": "FX:GBPUSD", "d": "GBP/USD" },
-                    { "s": "FX:USDJPY", "d": "USD/JPY" },
-                    { "s": "FX:USDCHF", "d": "USD/CHF" },
-                    { "s": "FX:AUDUSD", "d": "AUD/USD" },
-                    { "s": "FX:USDCAD", "d": "USD/CAD" }
+                  title: "Forex",
+                  symbols: [
+                    { s: "FX:EURUSD", d: "EUR/USD" },
+                    { s: "FX:GBPUSD", d: "GBP/USD" },
+                    { s: "FX:USDJPY", d: "USD/JPY" },
+                    { s: "FX:USDCHF", d: "USD/CHF" },
+                    { s: "FX:AUDUSD", d: "AUD/USD" },
+                    { s: "FX:USDCAD", d: "USD/CAD" }
                   ],
-                  "originalTitle": "Forex"
+                  originalTitle: "Forex"
                 }
               ]
             });

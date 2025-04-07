@@ -17,6 +17,12 @@ interface TradingViewWidget {
     container_id?: string;
     height?: string | number;
     width?: string | number;
+    studies?: string[];
+    symbols?: { s: string; d: string }[];
+    tabs?: { title: string; symbols: { s: string; d: string }[]; originalTitle: string }[];
+    withdateranges?: boolean;
+    grid_color?: string;
+    overrides?: Record<string, string | number>;
   }) => void;
 }
 
