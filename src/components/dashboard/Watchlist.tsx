@@ -33,7 +33,7 @@ const WatchlistItem: React.FC<WatchlistItemProps> = ({
         <Switch 
           checked={notificationsEnabled} 
           onCheckedChange={setNotificationsEnabled}
-          size="sm"
+          className="h-4 w-7"
         />
       </div>
       <div className="flex items-center justify-between">
