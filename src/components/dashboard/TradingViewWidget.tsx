@@ -85,7 +85,7 @@ export function TradingViewWidget({
             });
           } else if (widgetType === 'ticker') {
             new window.TradingView.widget({
-              symbols: [symbol],
+              symbols: [{ s: symbol, d: symbol.split(':').pop() || 'Symbol' }],
               width: "100%",
               height: autosize ? '100%' : height,
               theme,
