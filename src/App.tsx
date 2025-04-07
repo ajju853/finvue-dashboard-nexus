@@ -9,6 +9,7 @@ import Markets from "./pages/Markets";
 import Portfolio from "./pages/Portfolio";
 import WatchlistPage from "./pages/WatchlistPage";
 import News from "./pages/News";
+import MangaVerse from "./pages/MangaVerse";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -25,6 +26,7 @@ const App = () => (
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/watchlist" element={<WatchlistPage />} />
           <Route path="/news" element={<News />} />
+          <Route path="/mangaverse/*" element={<MangaVerse />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
