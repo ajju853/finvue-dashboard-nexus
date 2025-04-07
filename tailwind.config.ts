@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,7 +62,52 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				success: {
+					DEFAULT: '#10B981',
+					50: '#ECFDF5',
+					100: '#D1FAE5', 
+					500: '#10B981',
+					600: '#059669',
+				},
+				danger: {
+					DEFAULT: '#EF4444',
+					50: '#FEF2F2',
+					100: '#FEE2E2',
+					500: '#EF4444',
+					600: '#DC2626',
+				},
+				warning: {
+					DEFAULT: '#F59E0B',
+					50: '#FFFBEB',
+					100: '#FEF3C7',
+					500: '#F59E0B',
+					600: '#D97706',
+				},
+				info: {
+					DEFAULT: '#3B82F6',
+					50: '#EFF6FF',
+					100: '#DBEAFE',
+					500: '#3B82F6',
+					600: '#2563EB',
+				},
+				finPurple: {
+					DEFAULT: '#7E69AB',
+					light: '#9b87f5',
+					dark: '#6E59A5',
+				},
+				finBlue: {
+					DEFAULT: '#0EA5E9',
+					light: '#38BDF8',
+					dark: '#0284C7',
+				},
+				finGreen: {
+					DEFAULT: '#4ADE80',
+					light: '#86EFAC',
+					dark: '#22C55E',
+				},
+				neutral: '#8E9196',
+				darkBg: '#1A1F2C',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -84,11 +130,42 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'fade-in': {
+					'0%': {
+						opacity: '0',
+						transform: 'translateY(10px)'
+					},
+					'100%': {
+						opacity: '1',
+						transform: 'translateY(0)'
+					}
+				},
+				'fade-out': {
+					'0%': {
+						opacity: '1',
+						transform: 'translateY(0)'
+					},
+					'100%': {
+						opacity: '0',
+						transform: 'translateY(10px)'
+					}
+				},
+				'pulse-light': {
+					'0%, 100%': {
+						opacity: '1'
+					},
+					'50%': {
+						opacity: '0.5'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'fade-in': 'fade-in 0.3s ease-out',
+				'fade-out': 'fade-out 0.3s ease-out',
+				'pulse-light': 'pulse-light 2s cubic-bezier(0.4, 0, 0.6, 1) infinite'
 			}
 		}
 	},
